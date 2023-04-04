@@ -31,6 +31,7 @@
 "..\..\output\bsp_usart.o"
 "..\..\output\fonts.o"
 "..\..\output\bsp_ili9341_lcd.o"
+"..\..\output\bsp_systick.o"
 --library_type=microlib --strict --scatter "..\..\Output\ADC-单通道-DMA读取.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

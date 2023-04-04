@@ -27,82 +27,16 @@ Project File Date:  12/18/2018
 <h2>Output:</h2>
 *** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'ADC-单通道-DMA读取'
-compiling main.c...
-compiling bsp_xpt2046_lcd.c...
-..\..\User\lcd\bsp_xpt2046_lcd.h(36): warning:  #2775-D: white space is required between the macro name "macXPT2046_SPI_MF103" and its replacement text
-  #define                   macXPT2046_SPI_MF103-指????_PIN                             GPIO_Pin_6
-..\..\User\lcd\bsp_xpt2046_lcd.h(37): warning:  #2775-D: white space is required between the macro name "macXPT2046_SPI_MF103" and its replacement text
-  #define                   macXPT2046_SPI_MF103-指????_PORT                          GPIOF
-..\..\User\lcd\bsp_xpt2046_lcd.h(37): warning:  #47-D: incompatible redefinition of macro "macXPT2046_SPI_MF103" (declared at line 36)
-  #define                   macXPT2046_SPI_MF103-指????_PORT                          GPIOF
-..\..\User\lcd\bsp_xpt2046_lcd.h(49): warning:  #2775-D: white space is required between the macro name "macXPT2046_MF103" and its replacement text
-  #define             macXPT2046_MF103-指????()                               GPIO_ReadInputDataBit ( macXPT2046_SPI_MF103-指????_PORT, macXPT2046_SPI_MF103-指????_PIN )
-..\..\User\lcd\bsp_xpt2046_lcd.c(125): warning:  #223-D: function "\u6307\u5357\u8005_PORT" declared implicitly
-    GPIO_InitStructure.GPIO_Pin = 
-acXPT2046_SPI_MF103-指????_PIN; 
-..\..\User\lcd\bsp_xpt2046_lcd.c(125): error:  #20: identifier "\u6307\u5357\u8005_PIN" is undefined
-    GPIO_InitStructure.GPIO_Pin = 
-acXPT2046_SPI_MF103-指????_PIN; 
-..\..\User\lcd\bsp_xpt2046_lcd.c(128): error:  #32: expression must have arithmetic type
-    GPIO_Init(
-acXPT2046_SPI_MF103-指????_PORT, &GPIO_InitStructure);
-..\..\User\lcd\bsp_xpt2046_lcd.c(218): warning:  #223-D: function "\u6307\u5357\u8005" declared implicitly
-                usTemp = 
-acXPT2046_MF103-指????();
-..\..\User\lcd\bsp_xpt2046_lcd.c(218): error:  #65: expected a ";"
-                usTemp = 
-acXPT2046_MF103-指????();
-..\..\User\lcd\bsp_xpt2046_lcd.c(547): error:  #20: identifier "macRED" is undefined
-    ILI9341_Clear ( usX - 10, usY, 20, 1, macRED);
-..\..\User\lcd\bsp_xpt2046_lcd.c(547): error:  #140: too many arguments in function call
-    ILI9341_Clear ( usX - 10, usY, 20, 1, macRED);
-..\..\User\lcd\bsp_xpt2046_lcd.c(548): error:  #140: too many arguments in function call
-    ILI9341_Clear ( usX, usY - 10, 1, 20, macRED);
-..\..\User\lcd\bsp_xpt2046_lcd.c(583): error:  #20: identifier "macILI9341_Default_Max_Heigth" is undefined
-            usScreenWidth = macILI9341_Default_Max_Heigth;
-..\..\User\lcd\bsp_xpt2046_lcd.c(584): error:  #20: identifier "macILI9341_Default_Max_Width" is undefined
-            usScreenHeigth = macILI9341_Default_Max_Width;
-..\..\User\lcd\bsp_xpt2046_lcd.c(608): error:  #20: identifier "macBACKGROUND" is undefined
-                        ILI9341_Clear ( 0, 0, usScreenWidth, usScreenHeigth, macBACKGROUND );       
-..\..\User\lcd\bsp_xpt2046_lcd.c(608): error:  #140: too many arguments in function call
-                        ILI9341_Clear ( 0, 0, usScreenWidth, usScreenHeigth, macBACKGROUND );       
-..\..\User\lcd\bsp_xpt2046_lcd.c(611): error:  #20: identifier "macWIDTH_EN_CHAR" is undefined
-        ILI9341_DispString_EN ( ( usScreenWidth - ( strlen ( pStr ) - 7 ) * macWIDTH_EN_CHAR ) >> 1, usScreenHeigth >> 1, pStr, macBACKGROUND, macRED );                        
-..\..\User\lcd\bsp_xpt2046_lcd.c(611): error:  #20: identifier "macRED" is undefined
-        ILI9341_DispString_EN ( ( usScreenWidth - ( strlen ( pStr ) - 7 ) * macWIDTH_EN_CHAR ) >> 1, usScreenHeigth >> 1, pStr, macBACKGROUND, macRED );                        
-..\..\User\lcd\bsp_xpt2046_lcd.c(611): error:  #140: too many arguments in function call
-        ILI9341_DispString_EN ( ( usScreenWidth - ( strlen ( pStr ) - 7 ) * macWIDTH_EN_CHAR ) >> 1, usScreenHeigth >> 1, pStr, macBACKGROUND, macRED );                        
-..\..\User\lcd\bsp_xpt2046_lcd.c(614): error:  #20: identifier "macHEIGHT_EN_CHAR" is undefined
-                        ILI9341_DispString_EN ( usScreenWidth >> 1, ( usScreenHeigth >> 1 ) - macHEIGHT_EN_CHAR, cStr, macBACKGROUND, macRED );
-..\..\User\lcd\bsp_xpt2046_lcd.c(614): error:  #140: too many arguments in function call
-                        ILI9341_DispString_EN ( usScreenWidth >> 1, ( usScreenHeigth >> 1 ) - macHEIGHT_EN_CHAR, cStr, macBACKGROUND, macRED );
-..\..\User\lcd\bsp_xpt2046_lcd.c(664): error:  #20: identifier "macBACKGROUND" is undefined
-        ILI9341_Clear ( 0, 0, usScreenWidth, usScreenHeigth, macBACKGROUND );
-..\..\User\lcd\bsp_xpt2046_lcd.c(664): error:  #140: too many arguments in function call
-        ILI9341_Clear ( 0, 0, usScreenWidth, usScreenHeigth, macBACKGROUND );
-..\..\User\lcd\bsp_xpt2046_lcd.c(667): error:  #20: identifier "macWIDTH_EN_CHAR" is undefined
-        ILI9341_DispString_EN ( ( usScreenWidth - strlen ( pStr ) * macWIDTH_EN_CHAR ) >> 1, usScreenHeigth >> 1, pStr, macBACKGROUND, macRED );        
-..\..\User\lcd\bsp_xpt2046_lcd.c(667): error:  #20: identifier "macRED" is undefined
-        ILI9341_DispString_EN ( ( usScreenWidth - strlen ( pStr ) * macWIDTH_EN_CHAR ) >> 1, usScreenHeigth >> 1, pStr, macBACKGROUND, macRED );        
-..\..\User\lcd\bsp_xpt2046_lcd.c(667): error:  #140: too many arguments in function call
-        ILI9341_DispString_EN ( ( usScreenWidth - strlen ( pStr ) * macWIDTH_EN_CHAR ) >> 1, usScreenHeigth >> 1, pStr, macBACKGROUND, macRED );        
-..\..\User\lcd\bsp_xpt2046_lcd.c(676): error:  #140: too many arguments in function call
-        ILI9341_Clear ( 0, 0, usScreenWidth, usScreenHeigth, macBACKGROUND ); 
-..\..\User\lcd\bsp_xpt2046_lcd.c(679): error:  #140: too many arguments in function call
-        ILI9341_DispString_EN ( ( usScreenWidth - strlen ( pStr ) * macWIDTH_EN_CHAR ) >> 1, usScreenHeigth >> 1, pStr, macBACKGROUND, macRED );        
-..\..\User\lcd\bsp_xpt2046_lcd.c(682): error:  #20: identifier "macHEIGHT_EN_CHAR" is undefined
-        ILI9341_DispString_EN ( ( usScreenWidth - strlen ( pStr ) * macWIDTH_EN_CHAR ) >> 1, ( usScreenHeigth >> 1 ) + macHEIGHT_EN_CHAR, pStr, macBACKGROUND, macRED );                                
-..\..\User\lcd\bsp_xpt2046_lcd.c(682): error:  #140: too many arguments in function call
-        ILI9341_DispString_EN ( ( usScreenWidth - strlen ( pStr ) * macWIDTH_EN_CHAR ) >> 1, ( usScreenHeigth >> 1 ) + macHEIGHT_EN_CHAR, pStr, macBACKGROUND, macRED );                                
-..\..\User\lcd\bsp_xpt2046_lcd.c: 6 warnings, 24 errors
-"..\..\Output\ADC-单通道-DMA读取.axf" - 24 Error(s), 6 Warning(s).
+linking...
+Program Size: Code=11870 RO-data=15538 RW-data=92 ZI-data=1028  
+FromELF: creating hex file...
+"..\..\Output\ADC-单通道-DMA读取.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   C:\Users\Administrator\Desktop\电压管理\Project\RVMDK（uv5）\RTE
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Target not created.
 </pre>
 </body>
 </html>
